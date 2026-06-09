@@ -1,9 +1,11 @@
-# StringJAX
+# The StringJAX project: Compiling String Theory
 
-[![Docs](https://readthedocs.org/projects/stringjax/badge/?version=latest)](https://stringjax.readthedocs.io)
-[![PyPI](https://img.shields.io/pypi/v/stringjax.svg)](https://pypi.org/project/stringjax/)
-[![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+<p align="center">
+    [![Docs](https://readthedocs.org/projects/stringjax/badge/?version=latest)](https://stringjax.readthedocs.io)
+    [![PyPI](https://img.shields.io/pypi/v/stringjax.svg)](https://pypi.org/project/stringjax/)
+    [![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org)
+    <a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3"/></a>
+</p>
 
 <!-- The Docs/PyPI badges populate once the project is published; the Python and
      License badges are static. -->
