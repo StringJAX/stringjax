@@ -1,0 +1,20 @@
+# Documentation toolchain for the StringJAX hub.
+# Mirrors jaxvacua/documentation/requirements.txt so both umbrella + member
+# docs build with the same Sphinx + MyST stack.  The hub does not import the
+# member physics packages, and conf.py falls back to a default version if
+# `stringjax` itself is not installed, so the docs build even before the
+# ecosystem is published to PyPI.
+tqdm
+Sphinx
+sphinx-book-theme
+sphinx-copybutton
+sphinx-autodoc-typehints
+ipykernel
+sphinx_togglebutton
+sphinx_design
+sphinxcontrib-mermaid
+myst-nb
+nbsphinx
+Pygments
+matplotlib
+linkify-it-py

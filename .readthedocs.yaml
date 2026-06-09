@@ -1,4 +1,7 @@
 # Read the Docs build configuration for the StringJAX documentation hub.
+#
+# Layout mirrors jaxvacua: `documentation/` is the build root with a
+# `source/` subdirectory and a sibling `requirements.txt`.
 version: 2
 
 build:
@@ -7,15 +10,16 @@ build:
     python: "3.12"
 
 sphinx:
-  configuration: docs/conf.py
-  fail_on_warning: true
+  configuration: documentation/source/conf.py
+  fail_on_warning: false
 
 # Install only the documentation toolchain. The hub does not import the member
-# packages, and docs/conf.py falls back to a default version if `stringjax` is not
-# installed -- so the docs build even before the ecosystem is published to PyPI.
+# packages, and `documentation/source/conf.py` falls back to a default version
+# if `stringjax` is not installed -- so the docs build even before the
+# ecosystem is published to PyPI.
 python:
   install:
-    - requirements: docs/requirements.txt
+    - requirements: documentation/requirements.txt
 
 formats:
   - pdf

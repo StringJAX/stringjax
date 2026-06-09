@@ -1,9 +1,0 @@
-# Documentation toolchain for the StringJAX hub.
-# Kept as a standalone file (rather than the package `docs` extra) so the docs can
-# be built without installing the member packages, which may not yet be on PyPI.
-sphinx>=7
-myst-nb
-sphinx-book-theme
-sphinx-copybutton
-sphinx-design
-linkify-it-py
