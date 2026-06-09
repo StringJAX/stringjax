@@ -1,0 +1,25 @@
+name: lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      # Tools only: the metapackage's own quality checks do not require the (possibly
+      # unpublished) member packages to be installed.
+      - name: Install tooling
+        run: python -m pip install ruff mypy
+      - name: Ruff (lint)
+        run: ruff check .
+      - name: Ruff (format)
+        run: ruff format --check .
+      - name: mypy
+        run: mypy src/stringjax

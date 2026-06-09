@@ -1,0 +1,85 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "stringjax"
+dynamic = ["version"]
+description = "Umbrella metapackage and tooling for the StringJAX ecosystem of differentiable string-theory codes."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Andreas Schachner" }]
+keywords = [
+  "string theory",
+  "flux vacua",
+  "JAX",
+  "Calabi-Yau",
+  "moduli stabilisation",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Physics",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+]
+
+# Core install pulls the engine; jaxpolylog and cytools come in transitively.
+dependencies = [
+  "jaxvacua>=0.1,<0.2",
+]
+
+[project.optional-dependencies]
+# The curated databases and the vacua vault.
+data = ["stringforge>=0.1,<0.2"]
+# Everything: the full engine (incl. its own extras) plus the data layer.
+all = [
+  "jaxvacua[all]>=0.1,<0.2",
+  "stringforge>=0.1,<0.2",
+]
+# Documentation toolchain (used to build the StringJAX documentation hub).
+docs = [
+  "sphinx>=7",
+  "myst-nb",
+  "sphinx-book-theme",
+  "sphinx-copybutton",
+  "sphinx-design",
+  "linkify-it-py",
+]
+# Developer tooling.
+dev = [
+  "ruff",
+  "mypy",
+  "pytest",
+]
+
+[project.scripts]
+stringjax = "stringjax.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/StringJAX"
+Documentation = "https://stringjax.readthedocs.io"
+Source = "https://github.com/StringJAX/stringjax"
+Changelog = "https://github.com/StringJAX/stringjax/blob/main/CHANGELOG.md"
+Issues = "https://github.com/StringJAX/stringjax/issues"
+
+[tool.hatch.version]
+path = "src/stringjax/_version.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/stringjax"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.mypy]
+python_version = "3.12"
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

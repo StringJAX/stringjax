@@ -1,0 +1,11 @@
+# Conda/mamba CPU environment for the StringJAX ecosystem.
+#   mamba env create -f environment-cpu.yml
+#   conda activate stringjax
+name: stringjax
+channels:
+  - conda-forge
+dependencies:
+  - python>=3.12
+  - pip
+  - pip:
+      - stringjax[all]

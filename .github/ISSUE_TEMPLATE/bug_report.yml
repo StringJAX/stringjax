@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a problem with the stringjax metapackage, installer, or docs.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        For problems with a member package's physics or API, please open the issue
+        in that package's repository (e.g. StringJAX/jaxvacua).
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the problem and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Minimal commands or code that trigger the issue.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: doctor
+    attributes:
+      label: Output of `stringjax doctor`
+      description: Paste the full output. This captures versions, JAX backend, and precision.
+      render: text
+    validations:
+      required: true

@@ -1,0 +1,7 @@
+# CPU environment for the StringJAX ecosystem.
+#   python -m pip install -r requirements-cpu.txt
+#
+# This installs the whole ecosystem (engine + databases + extras) on the default
+# CPU JAX build. For GPU/TPU/Apple-Silicon, see requirements-gpu.txt and the
+# installation guide. Pin exact versions in constraints.txt for reproducibility.
+stringjax[all]

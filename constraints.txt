@@ -1,0 +1,17 @@
+# Reproducibility constraints for the StringJAX ecosystem.
+#
+# Pin the EXACT versions used to produce a given set of results, then install with:
+#   pip install -r requirements-cpu.txt -c constraints.txt
+#
+# Fill in concrete versions before archiving a release (left blank here so the file
+# does not silently freeze an untested combination).
+#
+# Example (replace with the actual tested versions):
+#   stringjax==0.1.0
+#   jaxvacua==0.1.0
+#   jaxpolylog==0.3.0
+#   stringforge==0.1.0
+#   jax==0.4.NN
+#   jaxlib==0.4.NN
+#   cytools==X.Y.Z
+#   python-flint==X.Y.Z

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question / discussion
+    url: https://github.com/orgs/StringJAX/discussions
+    about: Ask "how do I …?" questions and discuss usage here.
+  - name: JAXVacua issues
+    url: https://github.com/StringJAX/jaxvacua/issues
+    about: Report problems with the flux-vacuum engine in its own repository.

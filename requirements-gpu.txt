@@ -1,0 +1,8 @@
+# NVIDIA GPU (CUDA 12) environment for the StringJAX ecosystem.
+#   python -m pip install -r requirements-gpu.txt
+#
+# Installs the ecosystem and then the CUDA build of JAX. Make sure the CUDA/cuDNN
+# stack on your machine matches the requested wheel. For TPU use "jax[tpu]" with
+# the appropriate find-links, and for Apple Silicon install "jax-metal" instead.
+stringjax[all]
+jax[cuda12]

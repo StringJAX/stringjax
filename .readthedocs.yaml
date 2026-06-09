@@ -1,0 +1,22 @@
+# Read the Docs build configuration for the StringJAX documentation hub.
+version: 2
+
+build:
+  os: ubuntu-24.04
+  tools:
+    python: "3.12"
+
+sphinx:
+  configuration: docs/conf.py
+  fail_on_warning: true
+
+# Install only the documentation toolchain. The hub does not import the member
+# packages, and docs/conf.py falls back to a default version if `stringjax` is not
+# installed -- so the docs build even before the ecosystem is published to PyPI.
+python:
+  install:
+    - requirements: docs/requirements.txt
+
+formats:
+  - pdf
+  - htmlzip
