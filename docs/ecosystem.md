@@ -13,10 +13,13 @@ bounding, conifold / coni-LCS limits, and reduced (freezer) effective theories.
 `pip install jaxvacua` · docs: TODO · DOI: TODO
 :::
 :::{grid-item-card} JAXPolyLog — differentiable polylogarithms
+:link: https://jaxpolylog.readthedocs.io
+:link-type: url
 JAX-compatible polylogarithms with autodiff and JIT support, used to resum the
 worldsheet-instanton corrections in the periods. A dependency of JAXVacua.
 
-`pip install jaxpolylog` · docs: TODO · DOI: TODO
+`pip install jaxpolylog` · [docs](https://jaxpolylog.readthedocs.io) ·
+[GitHub](https://github.com/AndreasSchachner/jaxpolylog) · DOI: TODO
 :::
 :::{grid-item-card} StringForge — databases & vacua vault
 The data-infrastructure layer: curated Calabi–Yau geometry databases and a

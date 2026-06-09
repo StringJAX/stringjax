@@ -47,7 +47,7 @@ intersphinx_mapping = {
     "jax": ("https://jax.readthedocs.io/en/latest", None),
     # Member packages (uncomment once their docs are live):
     # "jaxvacua": ("https://jaxvacua.readthedocs.io/en/latest", None),
-    # "jaxpolylog": ("https://jaxpolylog.readthedocs.io/en/latest", None),
+    "jaxpolylog": ("https://jaxpolylog.readthedocs.io/en/latest", None),
     # "stringforge": ("https://stringforge.readthedocs.io/en/latest", None),
 }
 
