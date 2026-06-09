@@ -1,9 +1,9 @@
 # The StringJAX project: Compiling String Theory
 
 <p align="center">
-    [![Docs](https://readthedocs.org/projects/stringjax/badge/?version=latest)](https://stringjax.readthedocs.io)
-    [![PyPI](https://img.shields.io/pypi/v/stringjax.svg)](https://pypi.org/project/stringjax/)
-    [![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg)](https://www.python.org)
+    <a href="https://stringjax.readthedocs.io"><img src="https://readthedocs.org/projects/stringjax/badge/?version=latest" alt="Doc"/></a>
+    <a href="https://pypi.org/project/stringjax/"><img src="https://img.shields.io/pypi/v/stringjax.svg" alt="StringJAX"/></a>
+    <a href="https://www.python.org"><img src="https://img.shields.io/badge/python-3.12%2B-blue.svg" alt="Python"/></a>
     <a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3"/></a>
 </p>
 
