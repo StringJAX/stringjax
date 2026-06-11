@@ -67,10 +67,10 @@ Changelog = "https://github.com/StringJAX/stringjax/blob/main/CHANGELOG.md"
 Issues = "https://github.com/StringJAX/stringjax/issues"
 
 [tool.hatch.version]
-path = "src/stringjax/_version.py"
+path = "stringjax/_version.py"
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/stringjax"]
+packages = ["stringjax"]
 
 [tool.ruff]
 line-length = 100
