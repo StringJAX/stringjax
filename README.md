@@ -10,7 +10,7 @@
 <!-- The Docs/PyPI badges populate once the project is published; the Python and
      License badges are static. -->
 
-**Differentiable, JAX-native tools for string compactifications.**
+**Differentiable tools for string compactifications in JAX.**
 
 StringJAX is the umbrella project for a family of interoperating, separately
 versioned and separately citable Python packages. This repository hosts the
