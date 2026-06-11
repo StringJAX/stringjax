@@ -44,11 +44,11 @@ GPU/TPU/Apple-Silicon need one extra step for JAX — see the
 
 ## Packages
 
-| Package        | Role                                | Install                     | Docs | DOI |
-|----------------|-------------------------------------|-----------------------------|------|-----|
-| **JAXVacua**   | Type IIB flux-vacuum engine         | `pip install jaxvacua`      | TODO | TODO |
-| **JAXPolyLog** | Differentiable polylogarithms       | `pip install jaxpolylog`    | [stable](https://jaxpolylog.readthedocs.io) ([GitHub](https://github.com/AndreasSchachner/jaxpolylog)) | TODO |
-| **StringForge**| Calabi–Yau databases & vacua vault  | `pip install stringforge`   | TODO | TODO |
+| Package        | Role                                | Install                     | Docs | GitHub |
+|----------------|-------------------------------------|-----------------------------|------|--------|
+| **JAXVacua**   | Type IIB flux-vacuum engine         | `pip install jaxvacua`      | [DOC](https://jaxvacua.readthedocs.io) | ([GitHub](https://github.com/AndreasSchachner/jaxvacua)) |
+| **JAXPolyLog** | Differentiable polylogarithms       | `pip install jaxpolylog`    | [DOC](https://jaxpolylog.readthedocs.io) | ([GitHub](https://github.com/AndreasSchachner/jaxpolylog)) |
+| **StringForge**| Calabi–Yau databases & vacua vault  | `pip install stringforge`   | [DOC](https://stringforge.readthedocs.io) | ([GitHub](https://github.com/AndreasSchachner/stringforge)) |
 
 `StringJAX` itself is the project/brand and is *not* an installable physics package.
 
