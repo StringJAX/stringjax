@@ -63,7 +63,7 @@ def hints(info: dict) -> list[str]:
     if info.get("jaxvacua") is None:
         out.append(
             "jaxvacua is not installed. Install the ecosystem with "
-            "`pip install stringjax` (or `pip install \"stringjax[all]\"`)."
+            '`pip install stringjax` (or `pip install "stringjax[all]"`).'
         )
     if "jax_error" in info:
         out.append("JAX failed to import; check your JAX/jaxlib installation.")
@@ -71,18 +71,18 @@ def hints(info: dict) -> list[str]:
         if info.get("jax_backend") == "cpu":
             out.append(
                 "JAX is using the CPU backend. For GPU/TPU install the matching "
-                "wheel, e.g. `pip install -U \"jax[cuda12]\"`."
+                'wheel, e.g. `pip install -U "jax[cuda12]"`.'
             )
         if info.get("float64_enabled") is False:
             out.append(
                 "float64 is disabled. Flux-vacuum searches require it: set "
                 "`JAXVACUA_PRECISION=float64` before importing JAX, or call "
-                "`jaxvacua.set_precision(\"float64\")`."
+                '`jaxvacua.set_precision("float64")`.'
             )
     if info.get("optional:gurobipy") is False:
         out.append(
             "Gurobi is not available. Systematic flux enumeration needs it: "
-            "`pip install \"jaxvacua[bounding]\"` and activate a (free academic) licence."
+            '`pip install "jaxvacua[bounding]"` and activate a (free academic) licence.'
         )
     return out
 

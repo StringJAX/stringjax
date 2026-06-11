@@ -75,6 +75,15 @@ packages = ["stringjax"]
 [tool.ruff]
 line-length = 100
 target-version = "py312"
+# Generated Sphinx output (notebook copies under documentation/build/) is never linted.
+extend-exclude = ["documentation/build"]
+
+[tool.ruff.lint.per-file-ignores]
+# Tutorial notebooks intentionally interleave imports with explanatory prose and
+# setup calls (E402), and open with the idiomatic
+# `import warnings; warnings.filterwarnings("ignore")` one-liner (E702).  Unused-
+# import checks (F401) stay active so the tutorials remain clean.
+"*.ipynb" = ["E402", "E702"]
 
 [tool.mypy]
 python_version = "3.12"
