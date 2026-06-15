@@ -1,7 +1,7 @@
 # About StringJAX
 
 StringJAX is an umbrella project for differentiable, JAX-native tools that study
-string compactifications — from Calabi–Yau geometry through the four-dimensional
+string compactifications — from Calabi-Yau geometry through the four-dimensional
 effective theory to moduli stabilisation and phenomenology. This page explains why
 the project exists, the principles it is built on, and where it is heading.
 
@@ -42,7 +42,7 @@ StringJAX takes a different starting point. By building every component on
 
 | Layer | Member package | Responsibility |
 |-------|----------------|----------------|
-| Geometry & data | **StringForge** | Calabi–Yau databases and the vacua vault |
+| Geometry & data | **StringForge** | Calabi-Yau databases and the vacua vault |
 | Special functions | **JAXPolyLog** | Differentiable polylogarithms / instanton sums |
 | Effective theory & vacua | **JAXVacua** | Type IIB flux-EFT construction and vacuum search |
 | Distribution | **StringJAX** | Installer, environment doctor, documentation hub |
@@ -74,12 +74,11 @@ can evolve at their own pace without coordinated "big bang" releases.
 - **Versioning.** The umbrella follows [Semantic Versioning](https://semver.org)
   and pins members to compatible ranges; see the {doc}`compatibility` matrix. A
   member's breaking change widens the umbrella's window in a new minor release.
-- **Licensing.** The `stringjax` metapackage is MIT-licensed, but installing the
-  ecosystem pulls in GPL-3.0 members (notably JAXVacua); downstream use is subject
-  to those terms. See {doc}`install`.
+- **Licensing.** The `stringjax` metapackage is released under
+  **GPL-3.0-or-later**, matching the licence of `jaxvacua`; downstream use of the
+  ecosystem is subject to those terms. See {doc}`install`.
 - **Citation.** Users cite the specific member packages they used, not the
   umbrella; see {doc}`citation`.
 - **Contributions.** Physics belongs in the member repositories; the umbrella
   accepts packaging, tooling, and documentation changes. See the project's
-  contributing guide and code of conduct.
-```
+  contributing guide.

@@ -151,7 +151,7 @@ effective-theory prescription, the code constructs the corresponding
 quantities, searches for vacua, and produces physical data in a
 reproducible way.
 
-This is the role of the [`stringforge`](https://github.com/AndreasSchachner/stringforge)
+This is the role of the [`stringforge`](https://github.com/StringJAX/stringforge)
 data layer in the ecosystem.
 
 

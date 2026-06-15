@@ -10,9 +10,9 @@ No. Every member package installs and runs independently
 (`pip install jaxvacua`). `stringjax` is a convenience for installing the whole
 ecosystem at compatible versions in one step.
 
-**Why does the umbrella use MIT while JAXVacua is GPL-3.0?**
-The metapackage contains no physics code, so it can be permissive. Using the
-ecosystem still pulls in `jaxvacua`, and your usage is subject to its GPL-3.0 terms.
+**What licence applies to the ecosystem?**
+The `stringjax` metapackage is released under **GPL-3.0-or-later**, matching the
+licence of `jaxvacua`. Using the ecosystem subjects your work to those terms.
 
 **How do I get GPU/TPU acceleration?**
 Install the matching JAX wheel after `stringjax`; see {doc}`install`.

@@ -26,7 +26,7 @@ optimisation, and Newton-type solvers; flux bounding; conifold and
 coni-LCS limits; and reduced (freezer) effective theories.
 
 `pip install jaxvacua` &nbsp;&middot;&nbsp;
-[GitHub](https://github.com/AndreasSchachner/jaxvacua) &nbsp;&middot;&nbsp;
+[GitHub](https://github.com/StringJAX/jaxvacua) &nbsp;&middot;&nbsp;
 docs (when public)
 :::
 
@@ -42,22 +42,22 @@ in deep large-complex-structure regimes where $|z|$ may be as small
 as $10^{-30}$.
 
 `pip install jaxpolylog` &nbsp;&middot;&nbsp;
-[GitHub](https://github.com/AndreasSchachner/jaxpolylog) &nbsp;&middot;&nbsp;
+[GitHub](https://github.com/StringJAX/jaxpolylog) &nbsp;&middot;&nbsp;
 [docs](https://jaxpolylog.readthedocs.io)
 :::
 
 :::{grid-item-card} stringforge &mdash; Databases and vacua vault
-:link: https://github.com/AndreasSchachner/stringforge
+:link: https://github.com/StringJAX/stringforge
 :link-type: url
 
-The data layer: curated Calabi--Yau geometry databases (TDF, CICY,
+The data layer: curated Calabi-Yau geometry databases (TDF, CICY,
 KKLT) served from HuggingFace and cached locally, together with the
 persistent vault of flux vacua.  Owns I/O, caching, mirror-convention
 bridging, model loading, and vault layout / validation / curation;
 remains solver-light.
 
 `pip install stringforge` &nbsp;&middot;&nbsp;
-[GitHub](https://github.com/AndreasSchachner/stringforge) &nbsp;&middot;&nbsp;
+[GitHub](https://github.com/StringJAX/stringforge) &nbsp;&middot;&nbsp;
 docs (when public)
 :::
 
@@ -86,7 +86,7 @@ flowchart LR
 In words:
 
 - **`stringforge`** hosts the data the rest of the ecosystem consumes
-  -- Calabi--Yau geometries plus a persistent vault of flux vacua --
+  -- Calabi-Yau geometries plus a persistent vault of flux vacua --
   and exposes them as cached, lazily-loaded objects.
 - **`jaxpolylog`** is a pure-leaf dependency.  It provides the
   polylogarithm primitive that `jaxvacua` calls to evaluate

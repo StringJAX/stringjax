@@ -67,7 +67,7 @@ coni-LCS limits, and reduced (freezer) effective theories.
 :::
 
 :::{grid-item-card} `stringforge`
-The data layer: curated Calabi--Yau geometry databases (`TDF`,
+The data layer: curated Calabi-Yau geometry databases (`TDF`,
 `CICY`, `KKLT`) and the persistent vacua vault, served from
 HuggingFace and cached locally.
 :::

@@ -32,7 +32,7 @@ The flux-vacuum engine. Cite the release paper and the archived software version
   title  = {{JAXPolyLog}: differentiable polylogarithms in {JAX}},
   year   = {2026},
   note   = {TODO: Zenodo DOI},
-  url    = {https://github.com/AndreasSchachner/jaxpolylog},
+  url    = {https://github.com/StringJAX/jaxpolylog},
 }
 ```
 

@@ -8,7 +8,6 @@ StringForge); this `stringjax` repository hosts only the metapackage, the
 For the full guidelines — development setup, running the tests, building the docs,
 and the pull-request checklist — see the
 [`CONTRIBUTING.md`](https://github.com/StringJAX/stringjax/blob/main/CONTRIBUTING.md)
-in the repository root and the
-[code of conduct](https://github.com/StringJAX/stringjax/blob/main/CODE_OF_CONDUCT.md).
+in the repository root.
 
 Questions and "how do I …?" discussions are best raised in GitHub Discussions.

@@ -27,7 +27,7 @@ without dependencies and add the tooling directly:
 ```bash
 python -m pip install -e . --no-deps
 python -m pip install ruff mypy pytest
-python -m pip install -r docs/requirements.txt   # only if building the docs
+python -m pip install -r documentation/requirements.txt   # only if building the docs
 ```
 
 ## Checks to run before opening a pull request
@@ -37,7 +37,7 @@ ruff check .            # lint
 ruff format --check .   # formatting
 mypy src/stringjax      # type checks
 pytest                  # tests (if present)
-sphinx-build -W -b html docs docs/_build/html   # docs build (warnings are errors)
+sphinx-build -W -b html documentation/source documentation/build/html   # documentation build (warnings are errors)
 ```
 
 `stringjax doctor` should also run cleanly in your environment.
@@ -54,8 +54,5 @@ sphinx-build -W -b html docs docs/_build/html   # docs build (warnings are error
 ## Versioning
 
 The metapackage follows [Semantic Versioning](https://semver.org). Bump the version
-only when a member's compatibility window changes (see `docs/compatibility.md`).
-
-## Code of conduct
-
-By participating you agree to abide by the [Code of Conduct](CODE_OF_CONDUCT.md).
+only when a member's compatibility window changes (see
+`documentation/source/compatibility.md`).

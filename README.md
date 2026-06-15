@@ -39,16 +39,16 @@ pip install "stringjax[all]"     # + databases (StringForge) and the flux-boundi
 GPU/TPU/Apple-Silicon need one extra step for JAX — see the
 [installation guide](https://stringjax.readthedocs.io/en/latest/install.html).
 
-> Note: `stringjax` is permissively licensed (MIT), but using the ecosystem pulls
-> in `jaxvacua`, which is **GPL-3.0**; your usage is subject to those terms.
+> Note: `stringjax` is released under **GPL-3.0-or-later**, matching the licence
+> of `jaxvacua`; your usage of the ecosystem is subject to those terms.
 
 ## Packages
 
 | Package        | Role                                | Install                     | Docs | GitHub |
 |----------------|-------------------------------------|-----------------------------|------|--------|
-| **JAXVacua**   | Type IIB flux-vacuum engine         | `pip install jaxvacua`      | [DOC](https://jaxvacua.readthedocs.io) | ([GitHub](https://github.com/AndreasSchachner/jaxvacua)) |
-| **JAXPolyLog** | Differentiable polylogarithms       | `pip install jaxpolylog`    | [DOC](https://jaxpolylog.readthedocs.io) | ([GitHub](https://github.com/AndreasSchachner/jaxpolylog)) |
-| **StringForge**| Calabi–Yau databases & vacua vault  | `pip install stringforge`   | [DOC](https://stringforge.readthedocs.io) | ([GitHub](https://github.com/AndreasSchachner/stringforge)) |
+| **JAXVacua**   | Type IIB flux-vacuum engine         | `pip install jaxvacua`      | [DOC](https://jaxvacua.readthedocs.io) | ([GitHub](https://github.com/StringJAX/jaxvacua)) |
+| **JAXPolyLog** | Differentiable polylogarithms       | `pip install jaxpolylog`    | [DOC](https://jaxpolylog.readthedocs.io) | ([GitHub](https://github.com/StringJAX/jaxpolylog)) |
+| **StringForge**| Calabi-Yau databases & vacua vault  | `pip install stringforge`   | [DOC](https://stringforge.readthedocs.io) | ([GitHub](https://github.com/StringJAX/stringforge)) |
 
 `StringJAX` itself is the project/brand and is *not* an installable physics package.
 
@@ -106,5 +106,4 @@ collected in the documentation.
 
 ## Contributing
 
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) and the
-[code of conduct](CODE_OF_CONDUCT.md). Questions are welcome in GitHub Discussions.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md). Questions are welcome in GitHub Discussions.

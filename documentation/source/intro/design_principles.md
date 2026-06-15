@@ -129,7 +129,7 @@ already do well.  It uses them and bridges them.
 - **`scipy`** -- general numerical primitives such as
   `scipy.optimize.root` are used inside `jaxvacua` as drop-in
   solvers when JAX-native solvers are not the best fit.
-- **`cytools`** -- toric Calabi--Yau geometry.  StringJAX provides
+- **`cytools`** -- toric Calabi-Yau geometry.  StringJAX provides
   the bridges that turn `cytools` objects into pull-once-cache-forever
   ecosystem datasets.
 
