@@ -8,6 +8,7 @@ grid-card landing page.
 
 from __future__ import annotations
 
+from importlib.metadata import PackageNotFoundError
 from importlib.metadata import version as _v
 
 # -- Project information -----------------------------------------------------
@@ -17,7 +18,7 @@ copyright = "2026, Andreas Schachner"
 
 try:
     release = _v("stringjax")
-except Exception:  # pragma: no cover
+except PackageNotFoundError:  # pragma: no cover - docs built without stringjax installed
     release = "0.1.0"
 version = ".".join(release.split(".")[:2])
 

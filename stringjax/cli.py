@@ -7,7 +7,7 @@ Provides ``stringjax doctor`` (environment diagnostics) and
 from __future__ import annotations
 
 import argparse
-from typing import Sequence
+from collections.abc import Sequence
 
 from ._version import __version__
 from .doctor import MEMBERS, hints, report

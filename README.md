@@ -57,10 +57,10 @@ GPU/TPU/Apple-Silicon need one extra step for JAX — see the
 ```python
 import jaxvacua as jvc
 
-jvc.set_precision("float64")                       # before heavy compute
-eft    = jvc.FluxEFT(h12=2, model_ID=1, limit="LCS", maximum_degree=5)
+jvc.set_precision("float64")  # before heavy compute
+eft = jvc.FluxEFT(h12=2, model_ID=1, limit="LCS", maximum_degree=5)
 finder = jvc.FluxVacuaFinder.from_eft(eft)
-vacua  = finder.sample_SUSY_flux_vacua(N=100, mode="ISD")
+vacua = finder.sample_SUSY_flux_vacua(N=100, mode="ISD")
 print(len(vacua), "candidate vacua")
 ```
 

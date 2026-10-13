@@ -51,7 +51,7 @@ def report() -> dict:
         info["jax_backend"] = jax.default_backend()
         info["jax_devices"] = [str(d) for d in jax.devices()]
         info["float64_enabled"] = bool(jnp.asarray(1.0).dtype == jnp.float64)
-    except Exception as exc:  # pragma: no cover - depends on local install
+    except Exception as exc:  # noqa: BLE001 - report any broken JAX install, never crash  # pragma: no cover
         info["jax_error"] = repr(exc)
 
     return info

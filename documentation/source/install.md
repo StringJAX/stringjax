@@ -40,6 +40,7 @@ either programmatically
 
 ```python
 import jaxvacua as jvc
+
 jvc.set_precision("float64")
 ```
 
