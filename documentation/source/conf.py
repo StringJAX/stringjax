@@ -20,7 +20,7 @@ copyright = "2026, Andreas Schachner"
 # Read the Docs installs only the documentation requirements, and an installed stringjax
 # may be an older release.
 _version_py = Path(__file__).resolve().parents[2] / "stringjax" / "_version.py"
-_match = re.search(r'^__version__\s*=\s*"([^"]+)"', _version_py.read_text(), re.M)
+_match = re.search(r'^__version__\s*=\s*"([^"]+)"', _version_py.read_text(), re.MULTILINE)
 release = _match.group(1) if _match else "0.0.0"
 version = ".".join(release.split(".")[:2])
 
