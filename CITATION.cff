@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: >-
   If you use the StringJAX ecosystem, please cite the specific package(s) you used
-  (e.g. JAXVacua, JAXPolyLog, StringForge) rather than this umbrella metapackage.
+  (e.g. JAXVacua, JAXPolyLog, StringForge, StringJAX Tools) rather than this umbrella metapackage.
 title: "The StringJAX project: Compiling String Theory with JAX"
 abstract: >-
   Umbrella metapackage and tooling for the StringJAX ecosystem of differentiable
@@ -13,8 +13,8 @@ authors:
 repository-code: "https://github.com/StringJAX/stringjax"
 url: "https://stringjax.readthedocs.io"
 license: GPL-3.0-or-later
-version: 0.1.0
-date-released: "2026-01-01"
+version: 0.1.1
+date-released: "2026-10-28"
 keywords:
   - string theory
   - flux vacua

@@ -40,9 +40,8 @@ How to navigate
       :link: tutorials
       :link-type: doc
 
-      Use the tutorial catalogue.  Three minimal quickstart notebooks
-      cover the three public member packages -- one each for
-      ``jaxvacua``, ``stringforge``, and ``jaxpolylog``.
+      Use the tutorial catalogue.  Three minimal quickstart notebooks,
+      one each for ``jaxvacua``, ``stringforge``, and ``jaxpolylog``.
 
    .. grid-item-card:: Looking for a member package
       :link: intro/ecosystem

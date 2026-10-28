@@ -27,7 +27,7 @@ coni-LCS limits; and reduced (freezer) effective theories.
 
 `pip install jaxvacua` &nbsp;&middot;&nbsp;
 [GitHub](https://github.com/StringJAX/jaxvacua) &nbsp;&middot;&nbsp;
-docs (when public)
+[docs](https://jaxvacua.readthedocs.io)
 :::
 
 :::{grid-item-card} jaxpolylog &mdash; Differentiable polylogarithms
@@ -58,7 +58,21 @@ remains solver-light.
 
 `pip install stringforge` &nbsp;&middot;&nbsp;
 [GitHub](https://github.com/StringJAX/stringforge) &nbsp;&middot;&nbsp;
-docs (when public)
+[docs](https://stringforge.readthedocs.io)
+:::
+
+:::{grid-item-card} stringjax-tools &mdash; Shared JAX helpers
+:link: https://stringjax-tools.readthedocs.io
+:link-type: url
+
+The application-agnostic helper layer the member packages share:
+rank-checked automatic vectorisation, cached `vmap` wrappers,
+static-argument `jit` helpers, pytree registration policies, and
+explicit compilation-cache setup.  Installed through `jaxvacua`.
+
+`pip install stringjax-tools` &nbsp;&middot;&nbsp;
+[GitHub](https://github.com/StringJAX/stringjax_tools) &nbsp;&middot;&nbsp;
+[docs](https://stringjax-tools.readthedocs.io)
 :::
 
 ::::
@@ -97,8 +111,8 @@ In words:
   the result back to the `stringforge` vault for archival and reuse.
 
 The umbrella `stringjax` package itself does not introduce any
-physics or new APIs.  It pins the compatibility window of the three
-member packages and ships a thin command-line tool
+physics or new APIs.  It pins the compatibility window of the member
+packages and ships a thin command-line tool
 (`stringjax doctor`, `stringjax versions`) for environment checks.
 
 
@@ -166,7 +180,7 @@ than a re-architecture.
 
 - {doc}`design_principles` -- the technical commitments shared across
   member packages (differentiability, modularity, reproducibility).
-- {doc}`../tutorials` -- three executable quickstart notebooks, one
-  per public member package.
+- {doc}`../tutorials` -- three executable quickstart notebooks, for
+  `jaxvacua`, `jaxpolylog` and `stringforge`.
 - {doc}`../install` -- pinned environments and reproducibility
   guidance.

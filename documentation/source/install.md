@@ -58,9 +58,10 @@ actually enabled on your device.
 
 ## Optional features
 
-- **Flux bounding (Gurobi).** Systematic flux enumeration uses Gurobi, which needs a
-  (free, for academics) licence. Install with `pip install "jaxvacua[bounding]"` and
-  activate the licence; everything else works without it.
+- **Gurobi.** `gurobipy` is a core dependency of `jaxvacua` (its default moduli
+  sampling uses it), so it is always installed. The pip wheel carries a size-limited
+  licence; larger models need a full (free, for academics) licence.
+  `jaxvacua[bounding]` names the same dependency.
 - **Databases & vacua vault (StringForge).** Included via `stringjax[all]`, or
   `pip install stringforge`. Large datasets are fetched on demand and cached locally;
   set `STRINGFORGE_DATA_DIR` to relocate the cache and pin dataset versions for
@@ -84,4 +85,4 @@ stringjax doctor
 ```
 
 prints the member versions, the active JAX backend and devices, whether `float64` is
-enabled, and whether Gurobi is available, with suggestions when something is off.
+enabled, and whether Gurobi is present, with suggestions when something is off.

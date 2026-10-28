@@ -5,12 +5,17 @@ uses **compatible version ranges** (e.g. `>=0.1,<0.2`) so that *patch* releases 
 member require no new `stringjax` release; a new `stringjax` is published only when a
 member's compatibility window changes.
 
-| `stringjax` | `jaxvacua` | `jaxpolylog` | `stringforge` | Python |
-|-------------|------------|--------------|---------------|--------|
-| 0.1.x       | >=0.1,<0.2 | >=0.3,<0.4   | >=0.1,<0.2    | >=3.12 |
+| `stringjax` | `jaxvacua`   | `jaxpolylog` | `stringforge` | `stringjax-tools` | Python |
+|-------------|--------------|--------------|---------------|-------------------|--------|
+| 0.1.1       | >=0.1.3,<0.2 | >=0.4 (a)    | >=0.1.3,<0.2  | >=0.1 (a)         | >=3.12 |
+| 0.1.0       | >=0.1,<0.2   | (a)          | >=0.1,<0.2    | (a)               | >=3.12 |
 
 ```{note}
-`jaxpolylog` and `cytools` are installed transitively through `jaxvacua`.
+(a) `jaxpolylog`, `stringjax-tools` and `cytools` are installed transitively through
+`jaxvacua`; `stringjax` itself does not constrain them, so their ranges are those of
+the installed `jaxvacua` (from `jaxvacua` 0.1.3 on: `jaxpolylog>=0.4.0`,
+`stringjax-tools>=0.1.0`). The 0.1.0 documentation listed `jaxpolylog>=0.3,<0.4`, a
+bound that no package enforced.
 `stringforge` is installed via the `data` or `all` extras.
 ```
 

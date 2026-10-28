@@ -10,8 +10,8 @@ The next three chapters fill in the details:
 - {doc}`motivation` -- why a *differentiable, scalable* compactification
   pipeline is worth building, and what kinds of scientific questions it
   helps answer.
-- {doc}`ecosystem` -- the three publicly released member packages
-  (`jaxvacua`, `stringforge`, `jaxpolylog`), how they fit together, and
+- {doc}`ecosystem` -- the publicly released member packages
+  (`jaxvacua`, `stringforge`, `jaxpolylog`, `stringjax-tools`), how they fit together, and
   where to find each one's authoritative documentation.
 - {doc}`design_principles` -- the technical commitments that bind the
   ecosystem together (differentiability, modularity, reproducibility,
@@ -92,5 +92,5 @@ new users to the right entry point.
 - {doc}`ecosystem` -- the longer "what" and "how they fit".
 - {doc}`design_principles` -- the longer "how" (technical
   commitments).
-- {doc}`../tutorials` -- three executable quickstart notebooks, one
-  per public member package.
+- {doc}`../tutorials` -- three executable quickstart notebooks, for
+  `jaxvacua`, `jaxpolylog` and `stringforge`.

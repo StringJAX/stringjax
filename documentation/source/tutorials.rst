@@ -1,8 +1,8 @@
 Tutorials
 =========
 
-This page collects executable quickstart notebooks for the three
-public member packages.  Each is short, self-contained, and runs
+This page collects executable quickstart notebooks for ``jaxvacua``,
+``jaxpolylog`` and ``stringforge``.  Each is short, self-contained, and runs
 after a single ``pip install stringjax`` (no GPU, no external data).
 They are entry points -- each member package's own documentation
 covers its full surface in depth.

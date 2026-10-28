@@ -7,9 +7,6 @@
     <a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3"/></a>
 </p>
 
-<!-- The Docs/PyPI badges populate once the project is published; the Python and
-     License badges are static. -->
-
 **Differentiable tools for string compactifications in JAX.**
 
 StringJAX is the umbrella project for a family of interoperating, separately
@@ -49,6 +46,7 @@ GPU/TPU/Apple-Silicon need one extra step for JAX — see the
 | **JAXVacua**   | Type IIB flux-vacuum engine         | `pip install jaxvacua`      | [DOC](https://jaxvacua.readthedocs.io) | ([GitHub](https://github.com/StringJAX/jaxvacua)) |
 | **JAXPolyLog** | Differentiable polylogarithms       | `pip install jaxpolylog`    | [DOC](https://jaxpolylog.readthedocs.io) | ([GitHub](https://github.com/StringJAX/jaxpolylog)) |
 | **StringForge**| Calabi-Yau databases & vacua vault  | `pip install stringforge`   | [DOC](https://stringforge.readthedocs.io) | ([GitHub](https://github.com/StringJAX/stringforge)) |
+| **StringJAX Tools** | Shared JAX transform helpers | `pip install stringjax-tools` | [DOC](https://stringjax-tools.readthedocs.io) | ([GitHub](https://github.com/StringJAX/stringjax_tools)) |
 
 `StringJAX` itself is the project/brand and is *not* an installable physics package.
 
@@ -67,7 +65,7 @@ print(len(vacua), "candidate vacua")
 Check your environment at any time:
 
 ```bash
-stringjax doctor      # versions, JAX backend/devices, float64 status, Gurobi availability
+stringjax doctor      # versions, JAX backend/devices, float64 status, Gurobi presence
 stringjax versions    # just the member-package versions
 ```
 

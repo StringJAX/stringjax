@@ -12,14 +12,14 @@ jobs:
       fail-fast: false
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
-        python-version: ["3.12"]
+        python-version: ["3.12", "3.13"]
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
       # Install the metapackage WITHOUT its dependencies so the unit tests do not
-      # require the (possibly unpublished) member packages. The doctor/CLI helpers
+      # require the member packages. The doctor/CLI helpers
       # are designed to work even when no member is installed.
       - name: Install (no deps) + pytest
         run: |

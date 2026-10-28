@@ -1,7 +1,7 @@
 # Troubleshooting
 
 Run `stringjax doctor` first — it reports versions, the JAX backend/devices, the
-`float64` status, and Gurobi availability, with targeted suggestions.
+`float64` status, and Gurobi presence, with targeted suggestions.
 
 ## JAX uses the CPU even though I have a GPU
 The default install is CPU-only. Install the accelerator wheel:
@@ -9,13 +9,16 @@ The default install is CPU-only. Install the accelerator wheel:
 `stringjax doctor` (`jax_backend` should report `gpu`).
 
 ## `float64` is disabled / results look low-precision
-Enable 64-bit **before** importing JAX: `export JAXVACUA_PRECISION=float64`, or call
-`jaxvacua.set_precision("float64")` at the top of your script. On Apple Metal,
-`float64` may be unavailable and computations can fall back to the CPU.
+`jaxvacua` switches JAX to `float64` when it is imported, unless the environment
+variable `JAXVACUA_PRECISION` is set to `float32`. Unset it (or set it to `float64`)
+before importing `jaxvacua`, or call `jaxvacua.set_precision("float64")` at the top of
+your script. On Apple Metal, `float64` may be unavailable and computations can fall
+back to the CPU.
 
-## `ImportError` mentioning Gurobi
-Systematic flux enumeration needs Gurobi: `pip install "jaxvacua[bounding]"` and
-activate a (free academic) licence. The rest of JAXVacua works without it.
+## `ImportError` or licence errors mentioning Gurobi
+`gurobipy` is a core dependency of `jaxvacua`; if it is missing, reinstall `jaxvacua`.
+Its pip wheel carries a size-limited licence: a model-size error means you need a full
+(free, for academics) licence.
 
 ## CYTools-related errors
 CYTools is installed as part of the default `stringjax` install. If imports fail,

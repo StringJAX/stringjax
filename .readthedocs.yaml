@@ -11,7 +11,7 @@ build:
 
 sphinx:
   configuration: documentation/source/conf.py
-  fail_on_warning: false
+  fail_on_warning: true
 
 # Install only the documentation toolchain. The hub does not import the member
 # packages, and `documentation/source/conf.py` falls back to a default version
@@ -22,5 +22,4 @@ python:
     - requirements: documentation/requirements.txt
 
 formats:
-  - pdf
   - htmlzip

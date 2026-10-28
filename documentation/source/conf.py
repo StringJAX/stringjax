@@ -8,18 +8,20 @@ grid-card landing page.
 
 from __future__ import annotations
 
-from importlib.metadata import PackageNotFoundError
-from importlib.metadata import version as _v
+import re
+from pathlib import Path
 
 # -- Project information -----------------------------------------------------
 project = "StringJAX"
 author = "Andreas Schachner"
 copyright = "2026, Andreas Schachner"
 
-try:
-    release = _v("stringjax")
-except PackageNotFoundError:  # pragma: no cover - docs built without stringjax installed
-    release = "0.1.0"
+# The version from the source tree (``stringjax/_version.py``), not from installed metadata:
+# Read the Docs installs only the documentation requirements, and an installed stringjax
+# may be an older release.
+_version_py = Path(__file__).resolve().parents[2] / "stringjax" / "_version.py"
+_match = re.search(r'^__version__\s*=\s*"([^"]+)"', _version_py.read_text(), re.M)
+release = _match.group(1) if _match else "0.0.0"
 version = ".".join(release.split(".")[:2])
 
 

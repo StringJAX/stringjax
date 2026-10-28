@@ -168,7 +168,7 @@ ordinary rather than exceptional:
 5. Re-load those vacua later -- in the same or a different package --
    for stability checks, ML training, or follow-up analysis.
 
-Each of those steps is currently distributed across the three public
-member packages.  StringJAX's role as the umbrella is to ensure the
+Each of those steps is currently distributed across `jaxvacua`,
+`jaxpolylog` and `stringforge`.  StringJAX's role as the umbrella is to ensure the
 steps fit together and that doing all of them in sequence is the
 easy default.
